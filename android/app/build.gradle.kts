@@ -32,17 +32,11 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+}
 
-    applicationVariants.all { variant ->
-        outputs.all {
-            val outputImpl =
-                this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
-            val appName = "ByteLoc"
-            val buildTypeName = variant.buildType.name
-            val versionName = variant.versionName
-            outputImpl.outputFileName = "${appName}-${buildTypeName}-${versionName}.apk"
-        }
-    }
+// add this block:
+base {
+    archivesName.set("ByteLoc-${android.defaultConfig.versionName}")
 }
 
 kotlin {
