@@ -148,37 +148,6 @@ This allows ByteLoc to update a specific truck/vehicle row every second.
 
 ---
 
-## Building & running
-
-### Prerequisites
-
-- Flutter SDK installed and in your PATH.
-- Android SDK + platform tools installed.
-- A real Android device (recommended).
-
-### Commands
-
-Install dependencies:
-
-```bash
-flutter pub get
-```
-
-Run on a connected device:
-
-```bash
-flutter run
-```
-
-Build a release APK:
-
-```bash
-flutter build apk --release
-```
-
-The APK will be in `build/app/outputs/flutter-apk/`.
----
-
 ## License
 
 This project is licensed under the **MIT License**.
