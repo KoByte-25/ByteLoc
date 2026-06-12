@@ -177,22 +177,6 @@ flutter build apk --release
 ```
 
 The APK will be in `build/app/outputs/flutter-apk/`.
-
----
-
-## Versioning & Git tags
-
-This project uses simple semantic versioning, e.g. `0.1.2`.
-
-Example tag workflow:
-
-```bash
-git tag -a v0.1.2 -m "ByteLoc 0.1.2 first demo release"
-git push origin v0.1.2
-```
-
-On GitHub, this tag can be used to create a Release and attach build artifacts if needed.
-
 ---
 
 ## License
